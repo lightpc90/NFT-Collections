@@ -41,7 +41,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a Laz NFT");
     } catch (err) {
       console.error(err);
     }
@@ -67,7 +67,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a LAZ NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -315,7 +315,7 @@ export default function Home() {
     if (!presaleStarted) {
       return (
         <div>
-          <div className={styles.description}>Presale hasnt started!</div>
+          <div className={styles.description}>Presale has not started!</div>
         </div>
       );
     }
@@ -325,8 +325,7 @@ export default function Home() {
       return (
         <div>
           <div className={styles.description}>
-            Presale has started!!! If your address is whitelisted, Mint a Crypto
-            Dev 🥳
+            Presale has started!!! If your address is whitelisted, Mint a LAZ 🥳 NFT
           </div>
           <button className={styles.button} onClick={presaleMint}>
             Presale Mint 🚀
@@ -348,15 +347,15 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Crypto Devs</title>
+        <title>24Codelabz</title>
         <meta name="description" content="Whitelist-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <h1 className={styles.title}>Welcome to 24Codelabz NFT Collections!</h1>
           <div className={styles.description}>
-            Its an NFT collection for developers in Crypto.
+            Its an NFT collection for my community.
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/20 have been minted
@@ -369,7 +368,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        With &#10084; by Gideon Abbey (24Codelabz)
       </footer>
     </div>
   );
