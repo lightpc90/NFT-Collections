@@ -355,7 +355,7 @@ export default function Home() {
         <div>
           <h1 className={styles.title}>Welcome to 24Codelabz NFT Collections!</h1>
           <div className={styles.description}>
-            Its an NFT collection for my community.
+            This is the NFT collection for those that were whitelisted in the whitelist Dapp. Go the whitelist Dapp to whitelist your wallet and come back to claim.
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/20 have been minted
