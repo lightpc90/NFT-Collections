@@ -291,7 +291,7 @@ export default function Home() {
     // If wallet is not connected, return a button which allows them to connect their wllet
     if (!walletConnected) {
       return (
-        <button onClick={connectWallet} className={styles.button}>
+        <button onPress={connectWallet} className={styles.button}>
           Connect your wallet
         </button>
       );
@@ -305,7 +305,7 @@ export default function Home() {
     // If connected user is the owner, and presale hasnt started yet, allow them to start the presale
     if (isOwner && !presaleStarted) {
       return (
-        <button className={styles.button} onClick={startPresale}>
+        <button className={styles.button} onPress={startPresale}>
           Start Presale!
         </button>
       );
@@ -327,7 +327,7 @@ export default function Home() {
           <div className={styles.description}>
             Presale has started!!! If your address is whitelisted, Mint a LAZ 🥳 NFT
           </div>
-          <button className={styles.button} onClick={presaleMint}>
+          <button className={styles.button} onPress={presaleMint}>
             Presale Mint 🚀
           </button>
         </div>
@@ -337,7 +337,7 @@ export default function Home() {
     // If presale started and has ended, its time for public minting
     if (presaleStarted && presaleEnded) {
       return (
-        <button className={styles.button} onClick={publicMint}>
+        <button className={styles.button} onPress={publicMint}>
           Public Mint 🚀
         </button>
       );
